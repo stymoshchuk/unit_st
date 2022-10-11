@@ -26,22 +26,22 @@ In method update_player_info only parameter `id` is required
 Example of usage:
 example.rb
 
-require "unit_st"
+    require "unit_st"
 
-class Example
-    include UnitSt
+    class Example
+        include UnitSt
 
-    def create
-        create_player("Andy", "White", 500, 800, 1, 7, 2.0)
+        def create
+            create_player("Andy", "White", 500, 800, 1, 7, 2.0)
+        end
+
+        def update
+            update_player_info(2,"Andy", "Grim")
+        end
     end
 
-    def update
-        update_player_info(2,"Andy", "Grim")
-    end
-end
-
-puts Example.new.create
-puts Example.new.update
+    puts Example.new.create
+    puts Example.new.update
 
 
 
