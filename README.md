@@ -30,7 +30,7 @@ class Example
     end
 
     def update
-        update_player_info(2,"Andy", "Grim")
+        change_player_info(2,"Andy", "Grim")
     end
 end
 
