@@ -30,5 +30,4 @@ class CreatePlayer
     }
     self.class.post("/players", :body => args.to_json, :headers => { "Content-Type" => "application/json" })
   end
-
 end

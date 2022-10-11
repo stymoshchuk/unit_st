@@ -31,6 +31,6 @@ class UpdatePlayer
       team_id: team_id,
       weight_pounds: weight_pounds
     }
-    patch("/players/#{args[:id]}", :body => args, :headers => { 'Content-Type' => 'application/json' })
+    self.class.patch("/players/#{args[:id]}", :body => args, :headers => { 'Content-Type' => 'application/json' })
   end
 end

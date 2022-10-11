@@ -15,5 +15,3 @@ module UnitSt
     UpdatePlayer.new(id, first_name, last_name, height_feet, height_inches, position, team_id, weight_pounds).call
   end
 end
-
-
