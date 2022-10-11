@@ -1,22 +1,43 @@
 # UnitSt
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/unit_st`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add unit_st
+    bundle add unit_st
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install unit_st
+    gem install unit_st
 
 ## Usage
 
-TODO: Write usage instructions here
+For now it is possible to use only methods:
+create_player(first_name, last_name, height_feet, height_inches, position, team_id, weight_pounds)
+update_player_info(id, first_name, last_name)
+
+In method update_player_info only parameter `id` is required
+
+Example of usage:
+example.rb
+
+require "unit_st"
+
+class Example
+    include UnitSt
+
+    def create
+        create_player("Andy", "White", 500, 800, 1, 7, 2.0)
+    end
+
+    def update
+        update_player_info(2,"Andy", "Grim")
+    end
+end
+
+puts Example.new.create
+puts Example.new.update
+
+
 
 ## Development
 

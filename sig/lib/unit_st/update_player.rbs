@@ -1,0 +1,22 @@
+class UpdatePlayer
+
+  attr_reader id: Integer
+
+  attr_reader first_name: String
+
+  attr_reader last_name: String
+
+  attr_reader height_feet: Float
+
+  attr_reader height_inches: Float
+
+  attr_reader position: String
+
+  attr_reader team_id: Integer
+
+  attr_reader weight_pounds: Float
+
+  def initialize: (Integer id, ?String? first_name, ?String? last_name, ?Float? height_feet, ?Float? height_inches, ?String? position, ?Integer? team_id, ?Float? weight_pounds) -> void
+
+  def call: () -> untyped
+end
