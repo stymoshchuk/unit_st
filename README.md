@@ -9,6 +9,12 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     gem install unit_st
 
+In Gemfile should be added: 
+
+    gem "unit_st", "~> 0.1.5"
+
+0.1.5 - latest version
+
 ## Usage
 
 For now it is possible to use only methods:
