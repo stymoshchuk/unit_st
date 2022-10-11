@@ -11,9 +11,9 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 In Gemfile should be added: 
 
-    gem "unit_st", "~> 0.1.5"
+    gem "unit_st", "~> 0.1.6"
 
-0.1.5 - latest version
+0.1.6 - latest version
 
 ## Usage
 
